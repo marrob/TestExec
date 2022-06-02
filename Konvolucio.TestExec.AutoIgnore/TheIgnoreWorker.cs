@@ -24,11 +24,18 @@ namespace Konvolucio.TestExec.AutoIgnore
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
+            System.Threading.Thread T;
+            T = System.Threading.Thread.CurrentThread;
             try
             {
                 IntPtr winhdl = Win32ApiUser32.FindWindowByCaption(IntPtr.Zero, _windowCaption);
                 if (winhdl != IntPtr.Zero)
                 {
+                    uint processId = 0;
+                    uint threadId = Win32ApiUser32.GetWindowThreadProcessId(winhdl, out processId);
+                    Win32ApiUser32.AttachThreadInput((uint)T.ManagedThreadId, threadId, true);
+                    Win32ApiUser32.SetActiveWindow(winhdl);
+
                     _ignoredWindowCount++;
                     Win32ApiUser32.IgnoreWindow(_windowCaption);
                     AppLog.Instance.WriteLine("Ignored a " + _windowCaption);

@@ -36,6 +36,16 @@ namespace Konvolucio.TestExec.AutoIgnore
         public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
 
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId);
+
+        [DllImport("user32.dll")]
+        public static extern bool AttachThreadInput(uint idAttach, uint idAttachTo, bool fAttach);
+
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern IntPtr SetActiveWindow(IntPtr hWnd);
+
         /// <summary>
         /// A Button-hoz és a felirathoz használd a spyxx.exe-t
         /// "Microsoft Visual C++ Debug Library"
