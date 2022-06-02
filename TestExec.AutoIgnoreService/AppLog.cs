@@ -1,5 +1,5 @@
 ﻿
-namespace TestExec.AutoIgnoreService
+namespace Konvolucio.TestExec.AutoIgnoreService
 {
     using System;
     using System.IO;

@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestExec.AutoIgnoreService
+namespace Konvolucio.TestExec.AutoIgnoreService
 {
     internal static class Program
     {

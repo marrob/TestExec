@@ -1,4 +1,4 @@
-﻿namespace TestExec.AutoIgnore
+﻿namespace Konvolucio.TestExec.AutoIgnore
 {
     partial class Form1
     {

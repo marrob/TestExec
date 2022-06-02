@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TestExec.Simulator
+namespace Konvolucio.TestExec.Simulator
 {
     public partial class MainForm : Form
     {
@@ -20,6 +20,11 @@ namespace TestExec.Simulator
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Debug Assert Failed!", "Microsoft Visual C++ Debug Library", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

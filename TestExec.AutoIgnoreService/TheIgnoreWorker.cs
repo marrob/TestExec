@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace TestExec.AutoIgnoreService
+namespace Konvolucio.TestExec.AutoIgnoreService
 {
     internal class TheIgnoreWorker
     {

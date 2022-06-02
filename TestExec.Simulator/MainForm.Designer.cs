@@ -1,4 +1,4 @@
-﻿namespace TestExec.Simulator
+﻿namespace Konvolucio.TestExec.Simulator
 {
     partial class MainForm
     {
@@ -49,6 +49,7 @@
             this.Controls.Add(this.button1);
             this.Name = "MainForm";
             this.Text = "TestExec Simulator";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }

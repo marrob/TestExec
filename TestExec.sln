@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32112.339
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExec.Simulator", "TestExec.Simulator\TestExec.Simulator.csproj", "{759D3BA7-804F-4903-BE8B-3F8EB9253E42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konvolucio.TestExec.Simulator", "TestExec.Simulator\Konvolucio.TestExec.Simulator.csproj", "{759D3BA7-804F-4903-BE8B-3F8EB9253E42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExec.AutoIgnore", "TestExec.AutoIgnore\TestExec.AutoIgnore.csproj", "{ADCD9AC9-BB40-47B3-840E-8DDE74B9290D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konvolucio.TestExec.AutoIgnore", "TestExec.AutoIgnore\Konvolucio.TestExec.AutoIgnore.csproj", "{ADCD9AC9-BB40-47B3-840E-8DDE74B9290D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExec.AutoIgnoreService", "TestExec.AutoIgnoreService\TestExec.AutoIgnoreService.csproj", "{3EB4C916-89D7-4197-9753-A0187368C37A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konvolucio.TestExec.AutoIgnoreService", "TestExec.AutoIgnoreService\Konvolucio.TestExec.AutoIgnoreService.csproj", "{3EB4C916-89D7-4197-9753-A0187368C37A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

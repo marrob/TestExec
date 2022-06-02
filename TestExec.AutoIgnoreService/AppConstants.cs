@@ -1,4 +1,4 @@
-﻿namespace TestExec.AutoIgnoreService
+﻿namespace Konvolucio.TestExec.AutoIgnoreService
 {
     using System;
     public class AppConstants

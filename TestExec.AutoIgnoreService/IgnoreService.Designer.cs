@@ -1,4 +1,4 @@
-﻿namespace TestExec.AutoIgnoreService
+﻿namespace Konvolucio.TestExec.AutoIgnoreService
 {
     partial class IgnoreService
     {

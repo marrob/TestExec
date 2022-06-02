@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TestExec.AutoIgnore")]
+[assembly: AssemblyTitle("Konvolucio.TestExec.AutoIgnore")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TestExecFixer")]
+[assembly: AssemblyCompany("Konvolucio.Konvolucio.TestExec.AutoIgnore")]
+[assembly: AssemblyProduct("Konvolucio.TestExec Auto Ignore Tool")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
