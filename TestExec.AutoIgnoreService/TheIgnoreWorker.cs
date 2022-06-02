@@ -5,18 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
+
 namespace Konvolucio.TestExec.AutoIgnoreService
 {
     internal class TheIgnoreWorker
     {
 
-        readonly Timer _timer;
+        readonly System.Timers.Timer _timer;
         int _ignoredWindowCount;
         string _windowCaption = "Microsoft Visual C++ Debug Library";
 
         public TheIgnoreWorker()
         {
-            _timer = new Timer();
+            _timer = new System.Timers.Timer();
             _timer.Interval = 2000;
             _timer.Elapsed += Timer_Elapsed;
         }

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{759D3BA7-804F-4903-BE8B-3F8EB9253E42}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Konvolucio.TestExec.AutoIgnoreService</RootNamespace>
-    <AssemblyName>Konvolucio.TestExec.AutoIgnoreService</AssemblyName>
+    <RootNamespace>Konvolucio.TestExec.Simulator</RootNamespace>
+    <AssemblyName>Konvolucio.TestExec.Simulator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Konvolucio.TestExec.AutoIgnoreService.Properties {
+namespace Konvolucio.TestExec.Simulator.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
