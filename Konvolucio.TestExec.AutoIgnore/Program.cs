@@ -11,7 +11,7 @@ namespace Konvolucio.TestExec.AutoIgnore
         {
             var tiw = new TheIgnoreWorker();
             tiw.Start();
-            Win32ApiUser32.HideConsole();
+           // Win32ApiUser32.HideConsole();
             System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
         }
     }

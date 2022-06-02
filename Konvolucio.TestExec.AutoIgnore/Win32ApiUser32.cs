@@ -14,6 +14,8 @@ namespace Konvolucio.TestExec.AutoIgnore
         public const int WM_LBUTTONDOWN = 0x0201;
         public const int WM_LBUTTONUP = 0x0202;
 
+        public const int BN_CLICKED = 0;
+
         public const int SW_HIDE = 0;
         public const int SW_SHOW = 5;
 
@@ -42,9 +44,21 @@ namespace Konvolucio.TestExec.AutoIgnore
         [DllImport("user32.dll")]
         public static extern bool AttachThreadInput(uint idAttach, uint idAttachTo, bool fAttach);
 
+        [DllImport("user32.dll")]
+        public static extern bool BringWindowToTop(IntPtr hWnd);
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr SetActiveWindow(IntPtr hWnd);
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        public static extern int SendMessage(IntPtr hWnd, uint msg, int wParam, IntPtr lParam);
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        public static extern IntPtr GetParent(IntPtr hWnd);
+
+        [DllImport("user32.dll")]
+        public static extern int GetDlgCtrlID(IntPtr hWnd);
+
 
         /// <summary>
         /// A Button-hoz és a felirathoz használd a spyxx.exe-t
