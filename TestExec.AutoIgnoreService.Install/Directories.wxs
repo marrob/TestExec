@@ -21,6 +21,8 @@
           <Directory Id = "AppFolder" Name="$(var.ProductName)">
             <!--C:\Program Files\Konvolucio\MARC170608\Drivers\-->
             <Directory Id = "AppDriverFolder" Name="Drivers"/>
+			<!--C:\Program Files\Konvolucio\MALT200817.Service\-->
+		    <Directory Id = "ServiceFolder" Name="Service"/>
           </Directory>
         </Directory>
       </Directory>

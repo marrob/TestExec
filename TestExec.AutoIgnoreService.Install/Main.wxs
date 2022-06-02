@@ -20,13 +20,6 @@
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
     <Media Id="1" Cabinet="media.cab" EmbedCab="yes" />
 
-    <!--User Interface-->
-    <UIRef Id="WixUI_Mondo" />
-    <UIRef Id="WixUI_ErrorProgressText" />
-    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
-    <WixVariable Id="WixUILicenseRtf" Value=".\Resources\License.rtf" />
-    <WixVariable Id="WixUIBannerBmp" Value=".\Resources\Banner_500x70.jpg" />
-
     <!-- Define App Icon -->
     <Icon Id="AppAddRemove.ico" SourceFile=".\Resources\AppAddRemove.ico"/>
     <!-- Set Your Installer's Icon in Add/Remove Programs -->

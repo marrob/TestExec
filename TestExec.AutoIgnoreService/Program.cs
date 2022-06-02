@@ -17,6 +17,8 @@ namespace Konvolucio.TestExec.AutoIgnoreService
         static void Main()
         {
 
+            AppLog.Instance.WriteLine("FirstLine");
+
 #if DEBUG
             IgnoreService service = new IgnoreService();
             service.OnDebug();

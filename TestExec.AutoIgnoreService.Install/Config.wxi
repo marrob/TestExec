@@ -2,18 +2,10 @@
 <Include>
   <?define ShortCompany = "KNV" ?>
   <?define LongCompany =  "Konvolucio" ?>
-  <?define MajorVersion = "0"?>
-  <?define MinorVersion = "0"?>
-  <?define BuildNumber  = "0"?> <!-- VS: The default build number increments daily. -->
-  <!-- Revision is NOT used by WiX in the upgrade procedure -->
-  <!--The default revision number is the number of seconds since midnight local time, divided by 2.-->
-  <?define Revision = "0"?>
   
-  <!-- Full version number to display -->
-  <?define VersionNumber  = "$(var.MajorVersion).$(var.MinorVersion).$(var.BuildNumber).$(var.Revision)"?>
+  <?define VersionNumber = !(bind.FileVersion.Konvolucio.TestExec.AutoIgnoreService.exe) ?>
   <?define ProductName = "Konvolucio.TestExec.AutoIgnoreService"?>
   <?define ProductCode = "{723A89B8-CEBF-447B-9E96-EDD7756370CE}"?>
-  
   
   <?define URL = "https://github.com/marrob"?>
 

@@ -24,12 +24,12 @@ namespace Konvolucio.TestExec.AutoIgnoreService
         {
             try
             {
-                //AppLog.Instance.WriteLine("IgnoreService.cs.OnStart():Begin");
+                AppLog.Instance.WriteLine("IgnoreService.cs.OnStart():Begin");
                 _ignore.Start();
             }
             catch (Exception ex)
             {
-                //AppLog.Instance.WriteLine("IgnoreService.cs.OnStart():Exception" + ex.Message);
+                AppLog.Instance.WriteLine("IgnoreService.cs.OnStart():Exception" + ex.Message);
                 throw ex;
             }
         }
@@ -38,8 +38,8 @@ namespace Konvolucio.TestExec.AutoIgnoreService
         {
             try
             {
-                //AppLog.Instance.WriteLine("IgnoreService.cs.OnStop():Begin");
-                _ignore.Stop();
+                 AppLog.Instance.WriteLine("IgnoreService.cs.OnStop():Begin");
+                 _ignore.Stop();
             }
             catch (Exception ex)
             {
@@ -59,13 +59,6 @@ namespace Konvolucio.TestExec.AutoIgnoreService
                 AppLog.Instance.WriteLine("IgnoreService.cs.OnDebug():Exception" + ex.Message);
                 throw ex;
             }
-        }
-
-        protected override void OnShutdown()
-        {
-            AppLog.Instance.WriteLine("!!!IgnoreService.cs.OnShutdown():Begin");
-            this.Stop();
-            base.OnShutdown();
         }
     }
 }
