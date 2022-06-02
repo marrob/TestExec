@@ -1,4 +1,4 @@
-﻿namespace Konvolucio.TestExec.AutoIgnoreService
+﻿namespace Konvolucio.TestExec.AutoIgnore
 {
     using System;
     public class AppConstants
@@ -10,7 +10,7 @@
         public const string GenericTimestampFormat = "yyyy.MM.dd HH:mm:ss";
         public const string FileNameTimestampFormat = "yyMMdd_HHmmss";
         public const string NewLine = "\r\n";
-        public static string LogDirectory = "D:\\";/// Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        public static string LogDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
     }
 }

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Konvolucio.TestExec.AutoIgnoreService
+namespace Konvolucio.TestExec.AutoIgnore
 {
     public class Win32ApiUser32
     {
@@ -13,6 +13,9 @@ namespace Konvolucio.TestExec.AutoIgnoreService
         public const int WM_COMMAND = 0x0111;
         public const int WM_LBUTTONDOWN = 0x0201;
         public const int WM_LBUTTONUP = 0x0202;
+
+        public const int SW_HIDE = 0;
+        public const int SW_SHOW = 5;
 
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, uint Msg, uint wParam, int lParam);
@@ -25,6 +28,13 @@ namespace Konvolucio.TestExec.AutoIgnoreService
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+
+        [DllImport("kernel32.dll")]
+        public static extern IntPtr GetConsoleWindow();
+
+        [DllImport("user32.dll")]
+        public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
 
         /// <summary>
         /// A Button-hoz és a felirathoz használd a spyxx.exe-t
@@ -40,6 +50,13 @@ namespace Konvolucio.TestExec.AutoIgnoreService
                 SendMessage(ButtonHandle, BM_CLICK, 0, 0);
 
             }
+        }
+
+        public static void HideConsole() 
+        {
+            var handle = GetConsoleWindow();
+            ShowWindow(handle, SW_HIDE);
+
         }
     }
 }

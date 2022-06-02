@@ -8,8 +8,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Konvolucio.TestExec.AutoIgnore")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Konvolucio.Konvolucio.TestExec.AutoIgnore")]
-[assembly: AssemblyProduct("Konvolucio.TestExec Auto Ignore Tool")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Konvolucio.TestExec.AutoIgnore")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("adcd9ac9-bb40-47b3-840e-8dde74b9290d")]
+[assembly: Guid("ce395581-3c90-414a-8200-0ebe6d57fd55")]
 
 // Version information for an assembly consists of the following four values:
 //
