@@ -1,4 +1,4 @@
-﻿namespace Konvolucio.TestExec.Simulator
+﻿namespace Knv.TestExec.Simulator
 {
     partial class MainForm
     {

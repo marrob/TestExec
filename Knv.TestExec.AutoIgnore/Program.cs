@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Konvolucio.TestExec.AutoIgnore
+namespace Knv.TestExec.AutoIgnore
 {
     class Program
     {

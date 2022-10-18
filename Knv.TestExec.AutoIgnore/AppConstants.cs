@@ -1,4 +1,4 @@
-﻿namespace Konvolucio.TestExec.AutoIgnore
+﻿namespace Knv.TestExec.AutoIgnore
 {
     using System;
     public class AppConstants
@@ -14,3 +14,4 @@
 
     }
 }
+

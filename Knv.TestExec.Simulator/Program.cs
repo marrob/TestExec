@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Konvolucio.TestExec.Simulator
+namespace Knv.TestExec.Simulator
 {
     internal static class Program
     {

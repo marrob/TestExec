@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Timers;
 
 
-namespace Konvolucio.TestExec.AutoIgnore
+namespace Knv.TestExec.AutoIgnore
 {
     internal class TheIgnoreWorker
     {
@@ -26,7 +26,6 @@ namespace Konvolucio.TestExec.AutoIgnore
         {
             try
             {
-
                 IntPtr winhdl = Win32ApiUser32.FindWindowByCaption(IntPtr.Zero, _windowCaption);
                 if (winhdl != IntPtr.Zero)
                 {

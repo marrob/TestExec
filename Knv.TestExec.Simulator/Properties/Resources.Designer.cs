@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Konvolucio.TestExec.Simulator.Properties {
+namespace Knv.TestExec.Simulator.Properties {
     using System;
     
     

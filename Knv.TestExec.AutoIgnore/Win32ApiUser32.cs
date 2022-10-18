@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Konvolucio.TestExec.AutoIgnore
+namespace Knv.TestExec.AutoIgnore
 {
     public class Win32ApiUser32
     {
